@@ -17,7 +17,7 @@
   
 After finish above steps, You can generate pdf file from html. 
 
-**NOTES:** Don't forget to mention your html and pdf path details inside your code.
+**NOTES:** Don't forget to mention your html and pdf path details inside your code. If you want to generate pdf for static data then it is not mandatory to generate another html for clone data. Use that same sample html inside the code.
 
 
 ## LICENSE!
