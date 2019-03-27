@@ -1,5 +1,7 @@
 # Golang HTML to PDF Converter
 
+<img src="https://raw.githubusercontent.com/Mindinventory/Golang-HTMLTOPDF-Converter/master/html-pdf.gif" >
+
 ## Follow below steps to generate HTML to PDF using Golang:
 
   1. Create a sample HTML file inside of your project.
