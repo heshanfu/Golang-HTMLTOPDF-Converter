@@ -1,8 +1,8 @@
 package main
 
 import (
+	u "Golang-HTMLTOPDF-Converter/pdfGenerator"
 	"fmt"
-	u "html-pdf/pdfGenerator"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 	r := u.NewRequestPdf("")
 
 	//html template path
-	templatePath := "templates/example.html"
+	templatePath := "templates/sample.html"
 
 	//path for download pdf
 	outputPath := "storage/example.pdf"

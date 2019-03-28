@@ -7,6 +7,8 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strconv"
+	"time"
 )
 
 type RequestPdf struct {
@@ -34,14 +36,14 @@ func (r *RequestPdf) ParseTemplate(templateFileName string, data interface{}) er
 }
 
 func (r *RequestPdf) GeneratePDF(pdfPath string) (bool, error) {
-
+	t := time.Now().Unix()
 	// write whole the body
-	err1 := ioutil.WriteFile("templates/example.html", []byte(r.body), 0644)
+	err1 := ioutil.WriteFile("cloneTemplate/"+strconv.FormatInt(int64(t), 10)+".html", []byte(r.body), 0644)
 	if err1 != nil {
 		panic(err1)
 	}
 
-	f, err := os.Open("templates/example.html")
+	f, err := os.Open("cloneTemplate/" + strconv.FormatInt(int64(t), 10) + ".html")
 	if f != nil {
 		defer f.Close()
 	}
