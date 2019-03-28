@@ -18,7 +18,7 @@
      - ``go get html/template``
      
   5. Run 
-     -``go run main.go``
+     - ``go run main.go``
      
        
  
