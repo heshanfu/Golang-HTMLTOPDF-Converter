@@ -16,6 +16,10 @@
    
   4. We need to download another package for converting this html parse data to pdf using the below command.    
      - ``go get html/template``
+     
+  5. Run 
+     -``go run main.go``
+     
        
  
   
